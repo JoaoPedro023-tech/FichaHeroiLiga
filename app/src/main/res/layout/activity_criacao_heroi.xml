@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtBemVindo"
+            android:text="Personalize seu herói"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgAlinhamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbHeroi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herói"/>
+
+            <RadioButton
+                android:id="@+id/rbVilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vilão"/>
+
+            <RadioButton
+                android:id="@+id/rbAntiHeroi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anti-herói"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbVoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voo"/>
+
+        <CheckBox
+            android:id="@+id/cbForca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super-força"/>
+
+        <CheckBox
+            android:id="@+id/cbVelocidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super-velocidade"/>
+
+        <CheckBox
+            android:id="@+id/cbTelepatia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telepatia"/>
+
+        <CheckBox
+            android:id="@+id/cbEnergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rajadas de Energia"/>
+
+        <CheckBox
+            android:id="@+id/cbMagia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magia"/>
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/batman"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Avatar"/>
+
+        <Button
+            android:id="@+id/btnGerar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerar Ficha"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
